@@ -177,7 +177,7 @@
                         <h3>Chúng tôi là những nhà thiết kế và thi công nội thất hàng đầu Việt Nam</h3>
 
                         <p>{{config("app.name")}} mang hàng chục năm kinh nghiệm thiết kế nội thất đến không gian của bạn.
-                            Các chuyên gia thiết kế của chúng tôi được đào tạo để cùng bạn tạo ra những sản phẩm và thiết kế tốt nhất, phù hợp với màu sắc và ánh sáng xung quanh, vượt cả mong đợi của bạn</p>
+                            Các chuyên gia thiết kế của chúng tôi được đào tạo để cùng bạn tạo ra những sản phẩm và thiết kế tốt nhất, phù hợp với màu sắc và ánh sáng xung quanh, vượt cả mong đợi của khách hàng</p>
                         <p>Làm việc cùng nhau trực tiếp tại điạ điểm thi công hay văn phòng, chúng tôi sẽ giúp bạn mô phỏng các giải pháp thiết kế phù hợp với phong cách, không gian và ngân sách.</p>
                         <div class="bottom">
                             <div class="button">
@@ -219,7 +219,7 @@
     <!--End welcome area-->
 
     <!--Start service area-->
-    <section class="service-area" style="background-image:url(images/services/bg.jpg);">
+    <section class="service-area" style="background-image:url('images/services/bg.jpg');">
         <div class="container">
             <div class="sec-title">
                 <h2>Dịch vụ</h2>
@@ -347,6 +347,11 @@
                 </div>
                 <!--End single service item-->
 
+            </div>
+            <div class="row text-center" style="padding: 5rem;"><h2 style="color:white">Báo giá thiết kế nhà ở mới
+                    nhất</h2></div>
+            <div class="row text-center">
+                <img src="images/resources/bao_gia.png" alt="Bao gia">
             </div>
         </div>
     </section>
@@ -561,7 +566,7 @@
                     <div class="single-working-item">
                         <div class="icon-box">
                             <div class="icon">
-                                <span class="flaticon-people"></span>
+                                <span class="flaticon-social"></span>
                             </div>
                             <div class="count">
                                 <h3>1</h3>
@@ -579,7 +584,7 @@
                     <div class="single-working-item">
                         <div class="icon-box">
                             <div class="icon">
-                                <span class="flaticon-people"></span>
+                                <span class="flaticon-idea"></span>
                             </div>
                             <div class="count">
                                 <h3>2</h3>
@@ -597,7 +602,7 @@
                     <div class="single-working-item">
                         <div class="icon-box">
                             <div class="icon">
-                                <span class="flaticon-people"></span>
+                                <span class="flaticon-construction"></span>
                             </div>
                             <div class="count">
                                 <h3>3</h3>
@@ -615,7 +620,7 @@
                     <div class="single-working-item">
                         <div class="icon-box">
                             <div class="icon">
-                                <span class="flaticon-people"></span>
+                                <span class="flaticon-cup"></span>
                             </div>
                             <div class="count">
                                 <h3>4</h3>
@@ -646,9 +651,9 @@
                         <!--Start single slide item-->
                         <div class="single-slide-item">
                             <div class="img-box">
-                                <img src="images/customers/gallery.jpg" alt="Awesome Image">
+                                <img src="images/customers/gallery1.jpg" alt="Awesome Image">
                                 <div class="client-photo">
-                                    <img src="images/customers/customer-1.png" alt="Awesome Image">
+                                    <img src="images/customers/c1.png" alt="Awesome Image">
                                 </div>
                                 <div class="review-box">
                                     <span>Đánh giá dự án:</span>
@@ -674,9 +679,9 @@
                         <!--Start single slide item-->
                         <div class="single-slide-item">
                             <div class="img-box">
-                                <img src="images/customers/gallery.jpg" alt="Awesome Image">
+                                <img src="images/customers/gallery1.jpg" alt="Awesome Image">
                                 <div class="client-photo">
-                                    <img src="images/customers/customer-1.png" alt="Awesome Image">
+                                    <img src="images/customers/cg.png" alt="Awesome Image">
                                 </div>
                                 <div class="review-box">
                                     <span>Đánh giá:</span>
@@ -702,9 +707,9 @@
                         <!--Start single slide item-->
                         <div class="single-slide-item">
                             <div class="img-box">
-                                <img src="images/customers/gallery.jpg" alt="Awesome Image">
+                                <img src="images/customers/gallery2.jpg" alt="Awesome Image">
                                 <div class="client-photo">
-                                    <img src="images/customers/customer-1.png" alt="Awesome Image">
+                                    <img src="images/customers/c2.png" alt="Awesome Image">
                                 </div>
                                 <div class="review-box">
                                     <span>Đánh giá:</span>

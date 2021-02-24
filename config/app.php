@@ -3,8 +3,8 @@
 return [
 
     'phone' => '0979-617-896',
-    'address' => 'Đan Phượng, Hà Nội',
-    'email' => 'vietnh90@gmail.com',
+    'address' => '195 Tây Sơn, Phùng, Đan Phượng, Hà Nội',
+    'email' => 'arcchung90@gmail.com',
     'facebook' => 'https://www.facebook.com/N%E1%BB%99i-th%E1%BA%A5t-C3-Architect-103585054665215',
     'youtube' => 'https://www.facebook.com/N%E1%BB%99i-th%E1%BA%A5t-C3-Architect-103585054665215',
     'google' => 'https://www.facebook.com/N%E1%BB%99i-th%E1%BA%A5t-C3-Architect-103585054665215',
