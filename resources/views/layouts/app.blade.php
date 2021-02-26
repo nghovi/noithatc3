@@ -9,7 +9,7 @@
     <!-- For IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- master stylesheet -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css?version=20210229">
     <!-- Responsive stylesheet -->
     <link rel="stylesheet" href="css/responsive.css">
     <!-- Favicon -->
@@ -99,7 +99,7 @@
                     <!--Start logo-->
                     <div class="logo">
                         <a href="/">
-                            <img src="images/resources/logo.png" alt="Awesome Logo">
+                            <img style="max-height: 64px;" src="images/resources/logo.png" alt="Awesome Logo">
                         </a>
                     </div>
                     <!--End logo-->

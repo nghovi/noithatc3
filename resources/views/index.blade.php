@@ -498,14 +498,14 @@
                 <div class="col-md-3 col-sm-6 col-xs-12 filter-item residential corporate restaurant">
                     <div class="single-project-item">
                         <div class="img-holder">
-                            <img src="images/project/lat-pj-7.jpg" alt="Awesome Image">
+                            <img src="images/project/phong_an.png" alt="Awesome Image">
                             <div class="overlay">
                                 <div class="box">
                                     <div class="content">
-                                        <a href="project-single-v1.html"><h3>Phòng khách hiện đại</h3></a>
+                                        <a href="project-single-v1.html"><h3>Phòng ăn liên thông</h3></a>
                                         <p>Nhà ở</p>
                                         <div class="icon-holder">
-                                            <a href="images/project/lat-pj-7.jpg" data-rel="prettyPhoto" title="Interrio Project"><i class="fa fa-camera"></i></a>
+                                            <a href="images/project/phong_an.png" data-rel="prettyPhoto" title="Interrio Project"><i class="fa fa-camera"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -518,14 +518,14 @@
                 <div class="col-md-3 col-sm-6 col-xs-12 filter-item residential industrial">
                     <div class="single-project-item">
                         <div class="img-holder">
-                            <img src="images/project/lat-pj-8.jpg" alt="Awesome Image">
+                            <img src="images/project/tu.png" alt="Awesome Image">
                             <div class="overlay">
                                 <div class="box">
                                     <div class="content">
-                                        <a href="project-single-v1.html"><h3>Phòng khách hiện đại</h3></a>
+                                        <a href="project-single-v1.html"><h3>Tủ giầy đa năng</h3></a>
                                         <p>Nhà ở</p>
                                         <div class="icon-holder">
-                                            <a href="images/project/lat-pj-8.jpg" data-rel="prettyPhoto" title="Interrio Project"><i class="fa fa-camera"></i></a>
+                                            <a href="images/project/tu.png" data-rel="prettyPhoto" title="Interrio Project"><i class="fa fa-camera"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -679,7 +679,7 @@
                         <!--Start single slide item-->
                         <div class="single-slide-item">
                             <div class="img-box">
-                                <img src="images/customers/gallery1.jpg" alt="Awesome Image">
+                                <img src="images/customers/gallery2.jpg" alt="Awesome Image">
                                 <div class="client-photo">
                                     <img src="images/customers/cg.png" alt="Awesome Image">
                                 </div>
@@ -707,7 +707,7 @@
                         <!--Start single slide item-->
                         <div class="single-slide-item">
                             <div class="img-box">
-                                <img src="images/customers/gallery2.jpg" alt="Awesome Image">
+                                <img src="images/customers/gallery3.jpg" alt="Awesome Image">
                                 <div class="client-photo">
                                     <img src="images/customers/c2.png" alt="Awesome Image">
                                 </div>

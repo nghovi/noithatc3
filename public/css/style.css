@@ -326,7 +326,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 
 .header-area.stricky-fixed .outer-box .logo {
-  padding: 25px 0;
+  padding: 15px 0;
 }
 .header-area.stricky-fixed .main-menu .navigation li a {
   padding: 30px 40px 29px 0;
@@ -578,7 +578,7 @@ select:focus {
   float: left;
   position: relative;
   transition: all 500ms ease 0s;
-  padding: 40px 0;
+  padding: 26px 0;
 }
 
 /* Search css*/
