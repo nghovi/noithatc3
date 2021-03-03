@@ -458,7 +458,9 @@
 <!--End footer bottom area-->
 
 <!--Scroll to top-->
-<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
+<div class="scroll-to-top scroll-to-target" data-target="html">
+    <span class="fa fa-angle-up"></span>
+</div>
 
 <!-- main jQuery -->
 <script src="js/jquery-1.11.1.min.js"></script>
