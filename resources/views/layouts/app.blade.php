@@ -25,6 +25,8 @@
 </head>
 <body>
 
+@yield('body')
+
 <section class="top-bar-area">
     <div class="container">
         <div class="row">
@@ -140,9 +142,9 @@
                                     <ul>
                                         <li><a href="about.html">Giới thiệu</a></li>
                                         <li><a href="press-realese.html">Báo chí nói gì</a></li>
-                                        <li><a href="testimonial.html">Testimonials</a></li>
-                                        <li><a href="faq.html">FAQ’s</a></li>
-                                        <li><a href="404.html">404 Page</a></li>
+                                        <li><a href="testimonial.html">Tự bạch</a></li>
+{{--                                        <li><a href="faq.html">FAQ’s</a></li>--}}
+{{--                                        <li><a href="404.html">404 Page</a></li>--}}
                                     </ul>
                                 </li>
                                 <li class="dropdown"><a href="project-grid-v1.html">Dự án</a>
@@ -509,11 +511,5 @@
 
 <!-- thm custom script -->
 <script src="js/custom.js"></script>
-
-
-
-
-
-
 </body>
 </html>

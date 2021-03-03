@@ -1,12 +1,31 @@
 @extends('layouts.app')
+
+@section('body')
+    <div class="fb-customerchat"
+         page_id="101739961985386">
+    </div>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '757572551833253',
+                autoLogAppEvents: true,
+                xfbml: true,
+                version: 'v10.0'
+            });
+        };
+    </script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+@endsection
+
 @section('content')
 
     <!--Start rev slider wrapper-->
     <section class="rev_slider_wrapper">
-        <div id="slider1" class="rev_slider"  data-version="5.0">
+        <div id="slider1" class="rev_slider" data-version="5.0">
             <ul>
                 <li data-transition="slidingoverlayleft">
-                    <img src="images/slides/1.jpg"  alt="" width="1920" height="800" data-bgposition="top center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1" >
+                    <img src="images/slides/1.jpg" alt="" width="1920" height="800" data-bgposition="top center"
+                         data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1">
 
                     <div class="tp-caption  tp-resizeme"
                          data-x="left" data-hoffset="0"
