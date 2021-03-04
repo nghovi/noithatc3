@@ -23,8 +23,9 @@ Route::get('/contact', function () {
 });
 
 Route::middleware('throttle:api')->post('/send_mail', function (Request $request) {
-    $msg = "Từ noithatc3.com, Bạn {$request->name}, email {$request->email}  phone {$request->phone} viết: {$request->message}";
+    $msg = "Bạn {$request->name}, \nemail {$request->email} \nphone {$request->phone} \nmessage: {$request->message}";
     Mail::raw($msg, function ($message) {
+        $message->subject("Tin nhắn từ khách trên noithatc3.com");
         $message->to(config('app.email'));
         $message->cc('vnhtanhoi@gmail.com');
     });
