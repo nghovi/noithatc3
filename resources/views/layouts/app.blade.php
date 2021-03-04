@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- For IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- master stylesheet -->
     <link rel="stylesheet" href="css/style.css?version=20210229">
     <!-- Responsive stylesheet -->
@@ -204,7 +205,7 @@
 {{--                                        <li><a href="account.html">My Account</a></li>--}}
 {{--                                    </ul>--}}
 {{--                                </li>--}}
-                                <li class=""><a href="contact-v1.html">Liên hệ</a>
+                                <li class=""><a href="contact">Liên hệ</a>
 {{--                                    <ul>--}}
 {{--                                        <li><a href="contact-v1.html">Contact Us 01</a></li>--}}
 {{--                                        <li><a href="contact-v2.html">Contact Us 02</a></li>--}}
@@ -479,7 +480,7 @@
 <!-- easing -->
 <script src="js/jquery.easing.min.js"></script>
 <!-- gmap helper -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHzPSV2jshbjI8fqnC_C4L08ffnj5EN3A"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcjYJIbPW9Z7kEHYRDwikV_Qr8F51a1AM"></script>
 <!--gmap script-->
 <script src="js/gmaps.js"></script>
 <script src="js/map-helper.js"></script>

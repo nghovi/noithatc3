@@ -22,7 +22,9 @@
     <!-- Your Chat Plugin code -->
     <div class="fb-customerchat"
          attribution="setup_tool"
-         page_id="101739961985386">
+         page_id="103585054665215"
+         logged_in_greeting="Noithatc3 xin chào (^_^)"
+         logged_out_greeting="Noithatc3 xin chào (^_^)">
     </div>
 @endsection
 

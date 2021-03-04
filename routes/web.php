@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,6 +17,21 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
+
+Route::get('/contact', function () {
+    return view('contact');
+});
+
+Route::middleware('throttle:api')->post('/send_mail', function (Request $request) {
+    $msg = "Từ noithatc3.com, Bạn {$request->name}, email {$request->email}  phone {$request->phone} viết: {$request->message}";
+    Mail::raw($msg, function ($message) {
+        $message->to(config('app.email'));
+        $message->cc('vnhtanhoi@gmail.com');
+    });
+    return redirect()->back()
+        ->with(['success' => 'Tin nhắn của bạn đã được gửi đi. Cảm ơn đã liên hệ với chúng tôi']);
+});
+
 //
 //Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 //    return view('dashboard');
