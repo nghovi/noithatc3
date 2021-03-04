@@ -81,7 +81,7 @@
                         <form action="send_mail" id="contact-form" method="post">
                             @csrf
                             <input type="text" name="name" placeholder="Tên*">
-                            <input type="email" name="email" placeholder="Email*">
+                            <input type="text" name="email" placeholder="Email*">
                             <input type="text" name="phone" placeholder="Số ĐT">
                             <textarea name="message" placeholder="Nội dung tin nhắn..."></textarea>
                             <button class="thm-btn bg-cl-1" type="submit">Gửi tin nhắn</button>
