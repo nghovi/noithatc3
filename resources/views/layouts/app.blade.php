@@ -10,23 +10,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- master stylesheet -->
-    <link rel="stylesheet" href="css/style.css?version=20210229">
+    <link rel="stylesheet" href="/css/style.css?version=20210229">
     <!-- Responsive stylesheet -->
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="/css/responsive.css">
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/images/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon/favicon-16x16.png" sizes="16x16">
 
     <!-- Fixing Internet Explorer-->
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <script src="js/html5shiv.js"></script>
+    <script src="/js/html5shiv.js"></script>
     <![endif]-->
 </head>
 <body>
 
-@yield('body')
+@yield('topmost-body')
 
 <section class="top-bar-area">
     <div class="container">
@@ -102,7 +102,7 @@
                     <!--Start logo-->
                     <div class="logo">
                         <a href="/">
-                            <img style="max-height: 64px;" src="images/resources/logo.png" alt="Awesome Logo">
+                            <img style="max-height: 64px;" src="/images/resources/logo.png" alt="Awesome Logo">
                         </a>
                     </div>
                     <!--End logo-->
@@ -188,13 +188,13 @@
 {{--                                        </li>--}}
                                     </ul>
                                 </li>
-                                <li class="dropdown"><a href="blog.html">Blog</a>
-                                    <ul>
-                                        <li><a href="blog.html">Blog Default</a></li>
-                                        <li><a href="blog-standard.html">Blog Standard</a></li>
-                                        <li><a href="blog-single.html">Blog Single</a></li>
-                                    </ul>
-                                </li>
+{{--                                <li class="dropdown"><a href="blog.html">Blog</a>--}}
+{{--                                    <ul>--}}
+{{--                                        <li><a href="blog.html">Blog Default</a></li>--}}
+{{--                                        <li><a href="blog-standard.html">Blog Standard</a></li>--}}
+{{--                                        <li><a href="blog-single.html">Blog Single</a></li>--}}
+{{--                                    </ul>--}}
+{{--                                </li>--}}
 {{--                                <li class="dropdown"><a href="shop.html">Shop</a>--}}
 {{--                                    <ul>--}}
 {{--                                        <li><a href="shop.html">Products Fullwidth</a></li>--}}
@@ -205,7 +205,7 @@
 {{--                                        <li><a href="account.html">My Account</a></li>--}}
 {{--                                    </ul>--}}
 {{--                                </li>--}}
-                                <li class=""><a href="contact">Liên hệ</a>
+                                <li class=""><a href="/contact">Liên hệ</a>
 {{--                                    <ul>--}}
 {{--                                        <li><a href="contact-v1.html">Contact Us 01</a></li>--}}
 {{--                                        <li><a href="contact-v2.html">Contact Us 02</a></li>--}}
@@ -229,11 +229,11 @@
     <div class="container">
         <div class="row">
             <!--Start single footer widget-->
-            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                 <div class="single-footer-widget pd-bottom">
                     <div class="footer-logo">
                         <a href="/">
-                            <img src="images/footer/footer-logo.png" alt="Awesome Footer Logo">
+                            <img src="/images/footer/footer-logo.png" alt="Awesome Footer Logo">
                         </a>
                     </div>
                     <div class="interrio-info">
@@ -279,82 +279,9 @@
                 </div>
             </div>
             <!--End single footer widget-->
+
             <!--Start single footer widget-->
-            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <div class="single-footer-widget pd-bottom">
-                    <div class="title">
-                        <h3>Xem nhiều</h3>
-                    </div>
-                    <ul class="popular-news clearfix">
-                        <li class="single-popular-news-item clearfix">
-                            <div class="img-holder">
-                                <img src="images/footer/popular-news-1.jpg" alt="Awesome Image">
-                                <div class="overlay">
-                                    <div class="box">
-                                        <div class="content">
-                                            <a href="services-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="text-holder">
-                                <a href="#">
-                                    <p>Smart Ways to Store Your Home Appliances.</p>
-                                </a>
-                                <ul class="info">
-                                    <li>by Meckey</li>
-                                    <li>July17, 2016</li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="single-popular-news-item">
-                            <div class="img-holder">
-                                <img src="images/footer/popular-news-2.jpg" alt="Awesome Image">
-                                <div class="overlay">
-                                    <div class="box">
-                                        <div class="content">
-                                            <a href="services-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="text-holder">
-                                <a href="#">
-                                    <p>A Stylish Apartment With a Neutral Color Scheme.</p>
-                                </a>
-                                <ul class="info">
-                                    <li>by Zersy</li>
-                                    <li>May10, 2016</li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="single-popular-news-item">
-                            <div class="img-holder">
-                                <img src="images/footer/popular-news-3.jpg" alt="Awesome Image">
-                                <div class="overlay">
-                                    <div class="box">
-                                        <div class="content">
-                                            <a href="services-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="text-holder">
-                                <a href="#">
-                                    <p>How to Make Attarctive Decoration For Your Living Room </p>
-                                </a>
-                                <ul class="info">
-                                    <li>by Jonny</li>
-                                    <li>Aug21, 2016</li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!--End single footer widget-->
-            <!--Start single footer widget-->
-            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                 <div class="single-footer-widget pd-bottom">
                     <div class="title">
                         <h3>Nhận thông tin</h3>
@@ -375,7 +302,7 @@
                         <ul class="latest-project-items">
                             <li>
                                 <div class="img-holder">
-                                    <img src="images/footer/lat-project-1.jpg" alt="Awesome Image">
+                                    <img src="/images/footer/lat-project-1.jpg" alt="Awesome Image">
                                     <div class="overlay">
                                         <div class="box">
                                             <div class="content">
@@ -387,7 +314,7 @@
                             </li>
                             <li>
                                 <div class="img-holder">
-                                    <img src="images/footer/lat-project-2.jpg" alt="Awesome Image">
+                                    <img src="/images/footer/lat-project-2.jpg" alt="Awesome Image">
                                     <div class="overlay">
                                         <div class="box">
                                             <div class="content">
@@ -399,7 +326,7 @@
                             </li>
                             <li>
                                 <div class="img-holder">
-                                    <img src="images/footer/lat-project-3.jpg" alt="Awesome Image">
+                                    <img src="/images/footer/lat-project-3.jpg" alt="Awesome Image">
                                     <div class="overlay">
                                         <div class="box">
                                             <div class="content">
@@ -411,7 +338,7 @@
                             </li>
                             <li>
                                 <div class="img-holder">
-                                    <img src="images/footer/lat-project-4.jpg" alt="Awesome Image">
+                                    <img src="/images/footer/lat-project-4.jpg" alt="Awesome Image">
                                     <div class="overlay">
                                         <div class="box">
                                             <div class="content">
@@ -464,55 +391,55 @@
 </div>
 
 <!-- main jQuery -->
-<script src="js/jquery-1.11.1.min.js"></script>
+<script src="/js/jquery-1.11.1.min.js"></script>
 <!-- bootstrap -->
-<script src="js/bootstrap.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
 <!-- bx slider -->
-<script src="js/jquery.bxslider.min.js"></script>
+<script src="/js/jquery.bxslider.min.js"></script>
 <!-- count to -->
-<script src="js/jquery.countTo.js"></script>
+<script src="/js/jquery.countTo.js"></script>
 <!-- owl carousel -->
-<script src="js/owl.carousel.min.js"></script>
+<script src="/js/owl.carousel.min.js"></script>
 <!-- validate -->
-<script src="js/validate.js"></script>
+<script src="/js/validate.js"></script>
 <!-- mixit up -->
-<script src="js/jquery.mixitup.min.js"></script>
+<script src="/js/jquery.mixitup.min.js"></script>
 <!-- easing -->
-<script src="js/jquery.easing.min.js"></script>
+<script src="/js/jquery.easing.min.js"></script>
 <!-- gmap helper -->
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcjYJIbPW9Z7kEHYRDwikV_Qr8F51a1AM"></script>
 <!--gmap script-->
-<script src="js/gmaps.js"></script>
-<script src="js/map-helper.js"></script>
+<script src="/js/gmaps.js"></script>
+<script src="/js/map-helper.js"></script>
 <!-- video responsive script -->
-<script src="js/jquery.fitvids.js"></script>
+<script src="/js/jquery.fitvids.js"></script>
 <!-- jQuery ui js -->
-<script src="assets/jquery-ui-1.11.4/jquery-ui.js"></script>
+<script src="/assets/jquery-ui-1.11.4/jquery-ui.js"></script>
 <!-- Language Switche  -->
-<script src="assets/language-switcher/jquery.polyglot.language.switcher.js"></script>
+<script src="/assets/language-switcher/jquery.polyglot.language.switcher.js"></script>
 <!-- fancy box -->
-<script src="js/jquery.fancybox.pack.js"></script>
-<script src="js/jquery.appear.js"></script>
+<script src="/js/jquery.fancybox.pack.js"></script>
+<script src="/js/jquery.appear.js"></script>
 <!-- isotope script-->
-<script src="js/isotope.js"></script>
-<script src="js/jquery.prettyPhoto.js"></script>
+<script src="/js/isotope.js"></script>
+<script src="/js/jquery.prettyPhoto.js"></script>
 
 <!-- revolution slider js -->
-<script src="assets/revolution/js/jquery.themepunch.tools.min.js"></script>
-<script src="assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
-<script src="assets/revolution/js/extensions/revolution.extension.actions.min.js"></script>
-<script src="assets/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-<script src="assets/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-<script src="assets/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-<script src="assets/revolution/js/extensions/revolution.extension.migration.min.js"></script>
-<script src="assets/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-<script src="assets/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-<script src="assets/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-<script src="assets/revolution/js/extensions/revolution.extension.video.min.js"></script>
+<script src="/assets/revolution/js/jquery.themepunch.tools.min.js"></script>
+<script src="/assets/revolution/js/jquery.themepunch.revolution.min.js"></script>
+<script src="/assets/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+<script src="/assets/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+<script src="/assets/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+<script src="/assets/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+<script src="/assets/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+<script src="/assets/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+<script src="/assets/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+<script src="/assets/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+<script src="/assets/revolution/js/extensions/revolution.extension.video.min.js"></script>
 
 
 
 <!-- thm custom script -->
-<script src="js/custom.js"></script>
+<script src="/js/custom.js"></script>
 </body>
 </html>

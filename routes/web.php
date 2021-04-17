@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PostController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -14,9 +16,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+
+Route::get('/', [HomeController::class, 'index']);
+Route::get('/home', [HomeController::class, 'index']);
 
 Route::get('/contact', function () {
     return view('contact');
@@ -33,11 +35,9 @@ Route::middleware('throttle:api')->post('/send_mail', function (Request $request
         ->with(['success' => 'Tin nhắn của bạn đã được gửi đi. Cảm ơn đã liên hệ với chúng tôi']);
 });
 
-//
-//Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-//    return view('dashboard');
-//})->name('dashboard');
+Route::middleware('auth.basic')->resource('posts', PostController::class)->except([
+    'show'
+]);
 
-//Auth::routes();
-
-//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/news/{id}', [PostController::class, 'show'])->name('posts.show');
+Route::get('/news', [PostController::class, 'allPost']);

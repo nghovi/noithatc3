@@ -2,7 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Models\Post;
+use Illuminate\Contracts\Support\Renderable;
 
 class HomeController extends Controller
 {
@@ -13,16 +14,18 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+//        $this->middleware('auth');
     }
 
     /**
      * Show the application dashboard.
      *
-     * @return \Illuminate\Contracts\Support\Renderable
+     * @return Renderable
      */
     public function index()
     {
-        return view('home');
+        return view('index', [
+            'posts' => Post::whereStatus(1)->orderBy('id', 'desc')->take(3)->get(),
+        ]);
     }
 }

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('body')
+@section('topmost-body')
     <!-- Load Facebook SDK for JavaScript -->
     <div id="fb-root"></div>
     <script>
@@ -779,98 +779,14 @@
                         <span class="decor"></span>
                     </div>
                     <div class="more-blog-button pull-right">
-                        <a class="thm-btn bg-cl-1" href="news-standard.html">Xem thêm</a>
+                        <a class="thm-btn bg-cl-1" href="news">Xem thêm</a>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <!--Start single blog item-->
-                <div class="col-md-4">
-                    <div class="single-blog-item">
-                        <div class="img-holder">
-                            <img src="images/blog/lat-blog-1.jpg" alt="Awesome Image">
-                            <div class="overlay">
-                                <div class="box">
-                                    <div class="content">
-                                        <a href="blog-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="text-holder">
-                            <a href="blog-single.html">
-                                <h3 class="blog-title">Bài trí TV thế nào cho thật phong cách</h3>
-                            </a>
-                            <ul class="meta-info">
-                                <li><i class="fa fa-user" aria-hidden="true"></i><a href="#">Fletcher</a></li>
-                                <li><i class="fa fa-clock-o" aria-hidden="true"></i><a href="#">April 21, 2016</a></li>
-                            </ul>
-                            <div class="text">
-                                <p>How all this mistaken idea of denouncing pleasure and praising uts pain was borns and give you How all this mistaken.</p>
-                                <a class="readmore" href="news-single.html">Read More<i class="fa fa-caret-right" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--End single blog item-->
-                <!--Start single blog item-->
-                <div class="col-md-4">
-                    <div class="single-blog-item">
-                        <div class="img-holder">
-                            <img src="images/blog/lat-blog-2.jpg" alt="Awesome Image">
-                            <div class="overlay">
-                                <div class="box">
-                                    <div class="content">
-                                        <a href="blog-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="text-holder">
-                            <a href="blog-single.html">
-                                <h3 class="blog-title">Trải nghiệm không gian ăn tuyệt vời</h3>
-                            </a>
-                            <ul class="meta-info">
-                                <li><i class="fa fa-user" aria-hidden="true"></i><a href="#">Venanda</a></li>
-                                <li><i class="fa fa-clock-o" aria-hidden="true"></i><a href="#">March 4, 2016</a></li>
-                            </ul>
-                            <div class="text">
-                                <p>Master-builder of human happiness no one rejects, dislikes, or avoids ut itself, because it is pleasures.</p>
-                                <a class="readmore" href="news-single.html">Read More<i class="fa fa-caret-right" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--End single blog item-->
-                <!--Start single blog item-->
-                <div class="col-md-4">
-                    <div class="single-blog-item">
-                        <div class="img-holder">
-                            <img src="images/blog/lat-blog-3.jpg" alt="Awesome Image">
-                            <div class="overlay">
-                                <div class="box">
-                                    <div class="content">
-                                        <a href="blog-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="text-holder">
-                            <a href="blog-single.html">
-                                <h3 class="blog-title">Những cách thông minh để cất giữ đồ gia dụng</h3>
-                            </a>
-                            <ul class="meta-info">
-                                <li><i class="fa fa-user" aria-hidden="true"></i><a href="#">Bovando</a></li>
-                                <li><i class="fa fa-clock-o" aria-hidden="true"></i><a href="#">Jan 25, 2016</a></li>
-                            </ul>
-                            <div class="text">
-                                <p>Great explorer of the truth, the master seds builder of human happiness. No one rejects, dislikes, rationally encounter.</p>
-                                <a class="readmore" href="news-single.html">Read More<i class="fa fa-caret-right" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--End single blog item-->
+                @foreach($posts as $post)
+                    @include('card_post', ['post' => $post])
+                @endforeach
             </div>
         </div>
     </section>
