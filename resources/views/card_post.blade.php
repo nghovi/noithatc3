@@ -21,7 +21,7 @@
                         href="#">{{$post->updated_at->format('M d, Y')}}</a></li>
             </ul>
             <div class="text">
-                <a class="readmore" href="{{route('posts.show', $post->id)}}">Read More<i
+                <a class="readmore" href="{{route('posts.show', $post->id)}}">Chi tiết<i
                         class="fa fa-caret-right" aria-hidden="true"></i></a>
             </div>
         </div>

@@ -86,8 +86,9 @@ class PostController extends Controller
     public function update(Request $request, $id)
     {
         $request->validate([
-            'title' => 'required|string|min:10|max:256',
+            'title' => 'required|string|min:36|max:255',
             'post_content' => 'required|string',
+            'image' => 'sometimes|file|image'
         ]);
 
         $post = Post::find($id);

@@ -13,6 +13,15 @@
 <body>
 
 <div class="container mt-5" style="margin-bottom: 5rem; margin-top: 5rem;">
+    @if ($errors->any())
+        <div class="alert alert-danger">
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
     <div class="col-md-9">
         <form role="form" action="{{route('posts.update', $post->id)}}" method="POST" enctype="multipart/form-data">
             @csrf
@@ -24,7 +33,7 @@
                 <option value="0" @if(!$post->status) selected @endif>Pending</option>
             </select>
             <div class="form-group">
-                <b class="text-blue">Title</b>
+                <b class="text-blue">Title (<span style="color:red"> Min 36, Max 255 Character</span>)</b>
                 <input type="text" name="title" class="form-control" placeholder="Enter Title"
                        value="{{$post->title}}" required>
             </div>
