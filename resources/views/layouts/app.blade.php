@@ -19,9 +19,11 @@
         gtag('config', 'G-N1TRP9SB3R');
     </script>
 
-    
+
     <meta charset="UTF-8">
     <title>Noithatc3 || Thiết kế nội thất || Thi công nội thất</title>
+
+    <meta name="zalo-platform-site-verification" content="JDgbCB7rFmrkW-ygi9TE8KUxpNYhonSaE30" />
 
     <!-- responsive meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
